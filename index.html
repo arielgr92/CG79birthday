@@ -94,7 +94,7 @@
         .airline-name { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: white; letter-spacing: 3px; }
         .boarding-label { font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: var(--gold-light); letter-spacing: 4px; }
         .passenger-tribute { background: linear-gradient(135deg, var(--gold) 0%, #B8960C 100%); padding: 15px 30px; text-align: center; }
-        .tribute-text { font-family: 'Dancing Script', cursive; font-size: 26px; color: #1a1a2e; }
+        .tribute-text { font-family: 'Playfair Display', serif; font-size: 22px; color: #1a1a2e; font-weight: 600; }
         .boarding-content { padding: 25px 30px; }
         .boarding-row { display: flex; justify-content: space-between; margin-bottom: 20px; }
         .boarding-field { flex: 1; }
@@ -116,7 +116,8 @@
         .stub-label { font-family: 'IBM Plex Mono', monospace; font-size: 8px; color: #888; letter-spacing: 1px; text-transform: uppercase; }
         .stub-value { font-family: 'Playfair Display', serif; font-size: 14px; color: #1a1a2e; font-weight: 700; }
         .stub-destination { font-size: 18px; color: var(--burgundy); }
-        .stub-qr { width: 80px; height: 80px; background: linear-gradient(90deg, #1a1a2e 50%, transparent 50%), linear-gradient(#1a1a2e 50%, transparent 50%); background-size: 8px 8px; margin: 15px auto; border: 3px solid #1a1a2e; padding: 5px; }
+        .stub-qr { width: 80px; height: 80px; background: linear-gradient(90deg, #1a1a2e 50%, transparent 50%), linear-gradient(#1a1a2e 50%, transparent 50%); background-size: 8px 8px; margin: 15px auto; border: 3px solid #1a1a2e; padding: 5px; display: none; }
+        .stub-heart { font-size: 60px; text-align: center; margin: 15px auto; }
         .fine-print { margin-top: 20px; padding: 15px; background: rgba(212, 175, 55, 0.1); border-radius: 8px; font-size: 10px; color: #666; line-height: 1.6; text-align: center; }
         .close-coupon { position: absolute; top: -50px; right: 0; width: 40px; height: 40px; border: 2px solid var(--gold); border-radius: 50%; background: transparent; color: var(--gold); font-size: 24px; cursor: pointer; transition: all 0.3s ease; }
         .close-coupon:hover { background: var(--gold); color: #1a1a2e; }
@@ -171,15 +172,15 @@
                 <p>Queremos que sepas que cada momento compartido contigo ha sido un regalo. Tus consejos, tu humor, y tu capacidad de hacer que cualquier reunión familiar sea memorable.</p>
                 <div class="photo-gallery">
                     <div class="photo-frame">
-                        <img src="1.jpeg" alt="Foto de Carlos" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="1.jpg" alt="Foto de Carlos" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="photo-placeholder" style="display:none;"><span>📷</span>Foto 1</div>
                     </div>
                     <div class="photo-frame">
-                        <img src="2.png" alt="Foto de Carlos" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="2.jpg" alt="Foto de Carlos" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="photo-placeholder" style="display:none;"><span>📸</span>Foto 2</div>
                     </div>
                     <div class="photo-frame">
-                        <img src="3.jpeg" alt="Foto de Carlos" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="3.jpg" alt="Foto de Carlos" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <div class="photo-placeholder" style="display:none;"><span>🖼️</span>Foto 3</div>
                     </div>
                 </div>
@@ -212,7 +213,7 @@
                     <span class="boarding-label">BOARDING PASS</span>
                 </div>
                 <div class="passenger-tribute">
-                    <span class="tribute-text">Un viaje para el mejor abuelo, padre y leyenda</span>
+                    <span class="tribute-text">Un viaje para el mejor padre,leyenda y pronto mentor de un nieto </span>
                 </div>
                 <div class="boarding-content">
                     <div class="boarding-row">
@@ -231,7 +232,7 @@
                         </div>
                         <div class="boarding-field" style="text-align: right;">
                             <div class="field-label">Destino / To</div>
-                            <div class="field-value destination">USA</div>
+                            <div class="field-value destination">VIRGINIA, USA</div>
                         </div>
                     </div>
                     <hr class="boarding-divider">
@@ -264,11 +265,11 @@
             <div class="boarding-stub">
                 <div class="stub-header"><div class="stub-airline">GOLDBERGER<br>AIRLINES</div></div>
                 <div class="stub-field"><div class="stub-label">Pasajero</div><div class="stub-value">C. GOLDBERGER</div></div>
-                <div class="stub-field"><div class="stub-label">Destino</div><div class="stub-value stub-destination">USA</div></div>
+                <div class="stub-field"><div class="stub-label">Destino</div><div class="stub-value stub-destination">VIRGINIA, USA</div></div>
                 <div class="stub-field"><div class="stub-label">Vuelo</div><div class="stub-value">CG-79</div></div>
                 <div class="stub-field"><div class="stub-label">Fecha</div><div class="stub-value">∞</div></div>
-                <div class="stub-qr"></div>
-                <div class="fine-print">* Canjeable por un vuelo a cualquier destino del planeta Tierra<br>* No caduca porque el amor tampoco caduca<br>* Aplican abrazos obligatorios</div>
+                <div class="stub-heart">❤️</div>
+                <div class="fine-print">* Canjeable por un viaje a Virginia, USA<br>* No caduca porque el amor tampoco caduca<br>* Aplican abrazos obligatorios</div>
             </div>
         </div>
     </div>
